@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/styles/anim.css">
+    <link rel="stylesheet" href="./src/styles/scroll.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>TownCar - личный кабинет</title>
+</head>
+<body class="bg-neutral-900">
+    <section id="Reg">
+        <header class="py-6  bg-neutral-900">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-6">
+                    <div id="LogoBlock" class="">
+                        <a href="index.html#Home" id="title" class="text-5xl font-bold text-gray-300">Town<span class="text-yellow-600">Car</span></a>
+                    </div>
+                    <ul id="navBar" class="flex items-center gap-6">
+                        <li id="itemNav" class="">
+                            <a href="index.html#TypeCarBlock" class="text-xl text-gray-300">
+                                Автопарк
+                                <!-- <select class="outline-none bg-transparent text-gray-300 ">
+                                    <option class="bg-neutral-800">Автопарк</option>
+                                    <option class="bg-neutral-800">Комфорт</option>
+                                    <option class="bg-neutral-800">Бизнес</option>
+                                    <option class="bg-neutral-800">Премиум</option>
+                                </select> -->
+                            </a>
+                        </li>
+                        <li id="itemNav" class=""><a href="Conditions.html" class="text-xl text-gray-300 hover:underline transition">Условия</a></li>
+                        <li id="itemNav" class=""><a href="index.html#review" class="text-xl text-gray-300 hover:underline transition">Отзывы</a></li>
+                        <li id="itemNav" class=""><a href="index.html#contacts" class="text-xl text-gray-300 hover:underline transition">Контакты</a></li>
+                    </ul>
+                </div>   
+                <div class="flex items-center gap-4">
+                    <p id="number" class="text-2xl text-gray-300">+7 (961) 995-05-86</p>
+                    <button class="text-2xl border border-neutral-800 text-gray-300 px-4 py-1 rounded-lg hover:text-neutral-900 hover:bg-gray-300 transition">Личный кабинет</button>
+                </div>
+            </div>
+        </header>
+        <hr class="border-neutral-800"></hr>
+        <div class="h-[600px] flex items-center">
+            <div class="container mx-auto flex items-center gap-4 justify-around">
+                <div class="flex items-center flex-col">
+                    <h1 id="title" class="text-5xl font-semibold mb-3">Зарегестрируйте<br> личный кабинет</h1>
+                    <div class="">
+                        <p class="text-2xl text-gray-300">Если у вас уже есть личный аккаунта<br>войдите<span><a href="logIn.html" id="title"> здесь.</a></span></p>
+                    </div>
+                </div>
+                <div class="border border-neutral-800 py-6 px-4 rounded-lg">
+                    <div class="mb-6">
+                        <p class="text-gray-300 text-2xl font-bold">Введите ФИО</p>
+                        <input type="text" class="outline-none text-gray-300 text-2xl font-bold p-2 w-[500px] bg-transparent border-b-2" required>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-300 text-2xl font-bold">Введите Email</p>
+                        <input type="email" class="outline-none text-gray-300 text-2xl font-bold p-2 w-[500px] bg-transparent border-b-2" required>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-gray-300 text-2xl font-bold">Введите пароль</p>
+                        <input type="password" class="outline-none text-gray-300 text-2xl font-bold p-2 w-[500px] bg-transparent border-b-2" required>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="text-2xl border border-neutral-800 text-gray-300 px-4 py-1 rounded-lg hover:text-neutral-900 hover:bg-gray-300 transition">Зарегестрироваться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full pt-16">
+        <hr class="border-neutral-800"></hr>
+        <div class="container mx-auto py-16 flex items-center justify-around flex-wrap">
+            <div id="LogoBlock" class="w-1/3">
+                <a href="#Home" id="title" class="text-5xl font-bold text-gray-300">Town<span class="text-yellow-600">Car</span></a>
+                <p class="text-gray-300 text-xl">Аренда премиальных автомобилей</p>
+            </div>
+            <div class="w-1/3 flex flex-col">
+                <p id="title" class="text-gray-300 text-3xl">Разделы</p>
+                <span class="text-gray-300 text-2xl my-2">Автопарк</span>
+                <ul class="ml-5 list-disc text-gray-300">
+                    <li><a href="index.html#BlockComfort" class="text-gray-300 text-xl hover:underline">Автомобили класса «Комфорт»</a></li>
+                    <li><a href="index.html#BlockBusiness" class="text-gray-300 text-xl hover:underline">Автомобили класса «Бизнес»</a></li>
+                    <li><a href="index.html#BlockPremium" class="text-gray-300 text-xl hover:underline">Автомобили класса «Премиум»</a></li>
+                </ul>
+                <a href="Conditions.html" class="text-gray-300 text-2xl hover:underline my-2">Условия</a>
+                <a href="index.html#review" class="text-gray-300 text-2xl hover:underline my-2">Отзывы</a>
+                <a href="index.html#contacts" class="text-gray-300 text-2xl hover:underline my-2">Контакты</a>
+            </div>
+            <div class="w-1/3">
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-gray-300 text-xl font-semibold mb-4">Если у вас есть предложения, оставте заявку и мы с вами свяжемся</h1>
+                    <div class="flex flex-col gap-4 mb-4">
+                        <input type="text" placeholder="ФИО" class="p-2 text-neutral-900 text-xl outline-none" required> 
+                        <input type="tel"  placeholder="Номер телефона" class="p-2 text-neutral-900 text-xl outline-none" required>
+                    </div>
+                    <button class="text-xl bg-neutral-800 text-gray-300 px-4 py-1 rounded-lg hover:text-neutral-900 hover:bg-gray-300 transition font-bold">Отправить</button>
+                </div>
+            </div>
+            <div class="w-full text-center pt-14">
+                <span id="title" class="text-xl">
+                    © 2023. TownCar. Все права защищены.
+                </span>   
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

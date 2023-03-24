@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/styles/anim.css">
+    <link rel="stylesheet" href="./src/styles/scroll.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>TownCar - aренда премиальных автомобилей</title>
+</head>
+<body class="bg-neutral-900">
+    <section id="Home">
+        <header class="py-6  bg-neutral-900">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-6">
+                    <div id="LogoBlock" class="">
+                        <a href="#Home" id="title" class="text-5xl font-bold text-gray-300">Town<span class="text-yellow-600">Car</span></a>
+                    </div>
+                    <ul id="navBar" class="flex items-center gap-6">
+                        <li id="itemNav" class="">
+                            <a href="#TypeCarBlock" class="text-xl text-gray-300">
+                                Автопарк
+                                <!-- <select class="outline-none bg-transparent text-gray-300 ">
+                                    <option class="bg-neutral-800">Автопарк</option>
+                                    <option class="bg-neutral-800">Комфорт</option>
+                                    <option class="bg-neutral-800">Бизнес</option>
+                                    <option class="bg-neutral-800">Премиум</option>
+                                </select> -->
+                            </a>
+                        </li>
+                        <li id="itemNav" class=""><a href="Conditions.html" class="text-xl text-gray-300 hover:underline transition">Условия</a></li>
+                        <li id="itemNav" class=""><a href="#review" class="text-xl text-gray-300 hover:underline transition">Отзывы</a></li>
+                        <li id="itemNav" class=""><a href="#contacts" class="text-xl text-gray-300 hover:underline transition">Контакты</a></li>
+                    </ul>
+                </div>   
+                <div class="flex items-center gap-4">
+                    <p id="number" class="text-2xl text-gray-300">+7 (961) 995-05-86</p>
+                    <a href="logIn.html" class="text-2xl border border-neutral-800 text-gray-300 px-4 py-1 rounded-lg hover:text-neutral-900 hover:bg-gray-300 transition">Личный кабинет</a>
+                </div>
+            </div>
+        </header>
+        <div  id="HomeInfo" class="bg-[url(./src/image/other/bg.jpg)] bg-cover h-[720px] bg-no-repeat w-full bg-right-top p-44 ">
+            <div class="container mx-auto ">
+                <h1 class="text-7xl text-gray-100 mb-10">Аренда примеальных<br>автомобилей</h1>
+                <a href="#TypeCarBlock" class="text-2xl border border-gray-100 text-gray-100 px-5 py-3 rounded-sm hover:text-neutral-900 hover:bg-gray-100 transition font-bold">Каталог автомобилей</a>    
+            </div>
+        </div>
+        <div id="TypeCarBlock" class="text-center py-7">
+            <h1 id="title" class="text-4xl font-bold">Категории автомобилей</h1>
+            <div class="container mx-auto flex items-center justify-around pt-12">
+                <a href="#BlockComfort" class="text-gray-300 hover:text-yellow-600 cursor-pointer transition">
+                    <img src="./src/image/cars/type car/comfort.png" alt="" class="mb-6">
+                    <p class="text-3xl">Комфорт</p>
+                </a>
+                <a href="#BlockBusiness" class="text-gray-300 hover:text-yellow-600 cursor-pointer transition">
+                    <img src="./src/image/cars/type car/business.png" alt="" class="mb-6">
+                    <p class="text-3xl">Бизнес</p>
+                </a>
+                <a href="#BlockPremium" class="text-gray-300 hover:text-yellow-600 cursor-pointer transition">
+                    <img src="./src/image/cars/type car/premium.png" alt="" class="mb-6">
+                    <p class="text-3xl">Премиум</p>
+                </a>
+            </div>
+        </div>
+        <hr class="border-neutral-800"></hr>
+    </section>   
+    <section id="Autopark" class="w-full">
+        <div class="container mx-auto">
+            <div id="BlockComfort" class="py-10">
+                <h1 class="text-4xl text-gray-100 mb-6">Автомобили класса <span class="text-yellow-600">«Комфорт»</span></h1>
+                <div class="flex items-center flex-wrap justify-around gap-2">
+                    <div id="ComfortCar" class="bg-[url(./src/image/cars/comfort/1.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">BMW x4</h1>
+                            <p id="price" class="text-lg text-yellow-600">11.800 ₽/сут.</p>
+                            <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ComfortCar" class="bg-[url(./src/image/cars/comfort/2.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100 relative">Audi Q3 S-line</h1>
+                            <p id="price" class="text-lg text-yellow-600">7.900 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ComfortCar" class="bg-[url(./src/image/cars/comfort/3.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">Audi Q5</h1>
+                            <p id="price" class="text-lg text-yellow-600">10.900 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ComfortCar" class="bg-[url(./src/image/cars/comfort/4.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">KIA K5 GT line</h1>
+                            <p id="price" class="text-lg text-yellow-600">6.900 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ComfortCar" class="bg-[url(./src/image/cars/comfort/5.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">Audi A4 S-line</h1>
+                            <p id="price" class="text-lg text-yellow-600">9.500 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ComfortCar" class="bg-[url(./src/image/cars/comfort/6.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">BMW 318d</h1>
+                            <p id="price" class="text-lg text-yellow-600">8.500 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-neutral-800"></hr>
+            <div id="BlockBusiness" class="py-10">
+                <h1 class="text-4xl text-gray-100 mb-6">Автомобили класса <span class="text-yellow-600">«Бизнес»</span></h1>
+                <div class="flex items-center flex-wrap justify-around gap-2">
+                    <div id="BusinessCar" class="bg-[url(./src/image/cars/business/1.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">Mercedes E220d</h1>
+                            <p id="price" class="text-lg text-yellow-600">10.900 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="BusinessCar" class="bg-[url(./src/image/cars/business/2.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100 relative">Mercedes E200 Coupe</h1>
+                            <p id="price" class="text-lg text-yellow-600">12.900 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="BusinessCar" class="bg-[url(./src/image/cars/business/3.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">Mercedes E220</h1>
+                            <p id="price" class="text-lg text-yellow-600">10.900 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="BusinessCar" class="bg-[url(./src/image/cars/business/4.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">BMW 530d M-SPORT</h1>
+                            <p id="price" class="text-lg text-yellow-600">13.500 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="BusinessCar" class="bg-[url(./src/image/cars/business/5.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">BMW 530d M-SPORT</h1>
+                            <p id="price" class="text-lg text-yellow-600">13.500 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="BusinessCar" class="bg-[url(./src/image/cars/business/6.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">Mercedes CLS350d</h1>
+                            <p id="price" class="text-lg text-yellow-600">13.900 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-neutral-800"></hr>
+            <div id="BlockPremium" class="py-10">
+                <h1 class="text-4xl text-gray-100 mb-6">Автомобили класса <span class="text-yellow-600">«Премиум»</span></h1>
+                <div class="flex items-center flex-wrap justify-around gap-2">
+                    <div id="PremiumCar" class="bg-[url(./src/image/cars/premium/1.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">
+                                Rolls Royce Cullinan Black Badge
+                            </h1>
+                            <p id="price" class="text-lg text-yellow-600">110.000 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="PremiumCar" class="bg-[url(./src/image/cars/premium/2.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100 relative">
+                                Mercedes S450
+                            </h1>
+                            <p id="price" class="text-lg text-yellow-600">18.000 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="PremiumCar" class="bg-[url(./src/image/cars/premium/3.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">
+                                Mercedes Maybach
+                            </h1>
+                            <p id="price" class="text-lg text-yellow-600">26.900 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="PremiumCar" class="bg-[url(./src/image/cars/premium/4.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">
+                                Rolls Royce Wraith Black Badge
+                            </h1>
+                            <p id="price" class="text-lg text-yellow-600">90.000 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="PremiumCar" class="bg-[url(./src/image/cars/premium/5.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">
+                                Rolls Royce Ghost
+                            </h1>
+                            <p id="price" class="text-lg text-yellow-600">93.500 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="PremiumCar" class="bg-[url(./src/image/cars/premium/6.jpg)] bg-cover bg-center bg-no-repeat cursor-pointer hover:bg-[length:105%] overflow-hidden">
+                        <div class="p-3 h-[300px] w-[493px] relative">
+                            <h1 class="text-2xl text-gray-100">
+                                Mercedes GLS600 Maybach
+                            </h1>
+                            <p id="price" class="text-lg text-yellow-600">59.000 ₽/сут.</p>
+                             <div class="absolute h-[300px] w-[493px] top-8 left-8 flex items-end gap-4 justify-end px-2 hover:top-0 hover:left-0 transition">
+                                <p class="text-xl text-gray-100">600 л.с</p>
+                                <p class="text-xl text-gray-100">Полный</p>
+                                <p class="text-xl text-gray-100">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="border-neutral-800"></hr>
+    </section>
+    <section class="w-full pt-24" id="review">
+        <h1 id="title" class="text-4xl font-bold  text-center mb-16">Отзывы</h1>
+        <div class="container mx-auto flex items-center justify-center flex-wrap gap-4">
+            <div class="flex items-center w-[480px] h-[180px] border border-neutral-800 px-2 py-4 rounded-lg shadow-md shadow-neutral-800 gap-3">
+                <div class="bg-[url(./src/image/other/conditions3.png)] rounded-full bg-center bg-no-repeat bg-cover w-[100px] h-[100px]"></div>
+                <div class="w-[340px]">
+                    <span class="text-xl -ml-2">⭐⭐⭐⭐</span>
+                    <h1 class="text-gray-100 text-xl">Бугровский Д.И</h1>
+                    <p class="text-gray-400 text-lg">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+                </div>
+            </div>
+            <div class="flex items-center w-[480px] h-[180px] border border-neutral-800 px-2 py-4 rounded-lg shadow-md shadow-neutral-800 gap-3">
+                <div class="bg-[url(./src/image/other/conditions6.png)] rounded-full bg-center bg-no-repeat bg-cover w-[100px] h-[100px]"></div>
+                <div class="w-[340px]">
+                    <span class="text-xl -ml-2">⭐⭐⭐⭐⭐</span>
+                    <h1 class="text-gray-100 text-xl">Ошкин В.Р</h1>
+                    <p class="text-gray-400 text-lg">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+                </div>
+            </div>
+            <div class="flex items-center w-[480px] h-[180px] border border-neutral-800 px-2 py-4 rounded-lg shadow-md shadow-neutral-800 gap-3">
+                <div class="bg-[url(./src/image/other/conditions3.png)] rounded-full bg-center bg-no-repeat bg-cover w-[100px] h-[100px]"></div>
+                <div class="w-[340px]">
+                    <span class="text-xl -ml-2">⭐⭐⭐⭐</span>
+                    <h1 class="text-gray-100 text-xl">Бешкарев А.А</h1>
+                    <p class="text-gray-400 text-lg">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+                </div>
+            </div>
+            <div class="flex items-center w-[480px] h-[180px] border border-neutral-800 px-2 py-4 rounded-lg shadow-md shadow-neutral-800 gap-3">
+                <div class="bg-[url(./src/image/other/conditions6.png)] rounded-full bg-center bg-no-repeat bg-cover w-[100px] h-[100px]"></div>
+                <div class="w-[340px]">
+                    <span class="text-xl -ml-2">⭐⭐⭐⭐⭐</span>
+                    <h1 class="text-gray-100 text-xl">Цыганков А.А</h1>
+                    <p class="text-gray-400 text-lg">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+                </div>
+            </div>
+            <div class="flex items-center w-[480px] h-[180px] border border-neutral-800 px-2 py-4 rounded-lg shadow-md shadow-neutral-800 gap-3">
+                <div class="bg-[url(./src/image/other/conditions3.png)] rounded-full bg-center bg-no-repeat bg-cover w-[100px] h-[100px]"></div>
+                <div class="w-[340px]">
+                    <span class="text-xl -ml-2">⭐⭐⭐⭐</span>
+                    <h1 class="text-gray-100 text-xl">Смердин А.Л</h1>
+                    <p class="text-gray-400 text-lg">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+                </div>
+            </div>
+            <div class="flex items-center w-[480px] h-[180px] border border-neutral-800 px-2 py-4 rounded-lg shadow-md shadow-neutral-800 gap-3">
+                <div class="bg-[url(./src/image/other/conditions6.png)] rounded-full bg-center bg-no-repeat bg-cover w-[100px] h-[100px]"></div>
+                <div class="w-[340px]">
+                    <span class="text-xl -ml-2">⭐⭐⭐⭐⭐</span>
+                    <h1 class="text-gray-100 text-xl">Латкина М.О</h1>
+                    <p class="text-gray-400 text-lg">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+                </div>
+            </div>
+        </div>
+        <div id="reviewBanner" class="bg-[url(./src/image/other/conditions1.png)] h-[450px] mt-24 bg-no-repeat bg-right-bottom"></div>
+    </section>
+    <section id="contacts" class="w-full pt-24 mb-16">
+        <h1 id="title" class="text-center text-4xl font-bold mb-16">Контакты</h1>
+        <div class="container mx-auto flex items-center justify-between">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d48d22aa50ce36e27dead86a917fa66562bdf56e409c0ab91c34f99c8b8f2c8&amp;source=constructor" width="742" height="400" frameborder="0"></iframe>
+            <div class="border border-neutral-800 w-1/2 shadow-md shadow-neutral-800 py-10 px-4">
+                <p class="text-gray-300 font-semibold text-2xl m-5">Без выходных, Круглосуточно</p>
+                <hr class="border-neutral-800"></hr>
+                <p class="text-gray-300 font-semibold text-2xl m-5">Адрес: Алтайский край, Барнаул, улица Советской Армии, 101А, корп. 2</p>
+                <hr class="border-neutral-800"></hr>
+                <p class="text-gray-300 font-semibold text-2xl m-5">Email: info@towncar.ru</p>
+                <hr class="border-neutral-800"></hr>
+                <p class="text-gray-300 font-semibold text-2xl m-5">Тел.менеджера: +7 (961) 995-05-86</p>
+                <hr class="border-neutral-800"></hr>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full">
+        <hr class="border-neutral-800"></hr>
+        <div class="container mx-auto py-16 flex items-center justify-around flex-wrap">
+            <div id="LogoBlock" class="w-1/3">
+                <a href="#Home" id="title" class="text-5xl font-bold text-gray-300">Town<span class="text-yellow-600">Car</span></a>
+                <p class="text-gray-300 text-xl">Аренда премиальных автомобилей</p>
+            </div>
+            <div class="w-1/3 flex flex-col">
+                <p id="title" class="text-gray-300 text-3xl">Разделы</p>
+                <span class="text-gray-300 text-2xl my-2">Автопарк</span>
+                <ul class="ml-5 list-disc text-gray-300">
+                    <li><a href="#BlockComfort" class="text-gray-300 text-xl hover:underline">Автомобили класса «Комфорт»</a></li>
+                    <li><a href="#BlockBusiness" class="text-gray-300 text-xl hover:underline">Автомобили класса «Бизнес»</a></li>
+                    <li><a href="#BlockPremium" class="text-gray-300 text-xl hover:underline">Автомобили класса «Премиум»</a></li>
+                </ul>
+                <a href="Conditions.html" class="text-gray-300 text-2xl hover:underline my-2">Условия</a>
+                <a href="#review" class="text-gray-300 text-2xl hover:underline my-2">Отзывы</a>
+                <a href="#contacts" class="text-gray-300 text-2xl hover:underline my-2">Контакты</a>
+            </div>
+            <div class="w-1/3">
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-gray-300 text-xl font-semibold mb-4">Если у вас есть предложения, оставте заявку и мы с вами свяжемся</h1>
+                    <div class="flex flex-col gap-4 mb-4">
+                        <input type="text" placeholder="ФИО" class="p-2 text-neutral-900 text-xl outline-none" required> 
+                        <input type="tel"  placeholder="Номер телефона" class="p-2 text-neutral-900 text-xl outline-none" required>
+                    </div>
+                    <button class="text-xl bg-neutral-800 text-gray-300 px-4 py-1 rounded-lg hover:text-neutral-900 hover:bg-gray-300 transition font-bold">Отправить</button>
+                </div>
+            </div>
+            <div class="w-full text-center pt-14">
+                <span id="title" class="text-xl">
+                    © 2023. TownCar. Все права защищены.
+                </span>   
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
